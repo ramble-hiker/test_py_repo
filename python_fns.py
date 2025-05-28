@@ -1,6 +1,6 @@
 def get_type():
     """returns string throw type"""
-    throw_type = input("What do you want to throw?\n")
+    throw_type = input("What do you want to throw (\"apple or orange\"?)\n")
     return throw_type
 def get_amount():
     """returns number thrown"""

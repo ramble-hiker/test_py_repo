@@ -4,16 +4,22 @@ from python_fns import *
 def main ():
     """use external functions, ask what fruit to throw, how many
     return what you chose in statement"""
+    loop_question = True
+    while loop_question:
+        print("(enter q to quit)")
+        throw_type = get_type()
+        if throw_type == "q": break
+        if (throw_type != "apple") or (throw_type != "orange") :
+            continue
+        throw_amount = get_amount()
 
-    throw_type = get_type()
-    throw_amount = get_amount()
 
-    if throw_type == "apple":
-        throw_apple(throw_amount)
-    elif throw_type == "orange":
-        throw_orange(throw_amount)
-    else:
-        print("Incorrect input\n")
+        if throw_type == "apple":
+            throw_apple(throw_amount)
+        elif throw_type == "orange":
+            throw_orange(throw_amount)
+        else:
+            print("Incorrect input\n")
 
     # List practice
     # create list
